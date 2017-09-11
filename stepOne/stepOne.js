@@ -14,6 +14,7 @@ var https = require('https');
     //callback to be invoked
     response.on('data', function (data) {
       console.log('Chunk Received.  Length:', data.length, '\n');
+      console.log(data.toString());
     });
 
     response.on('end', function(){
